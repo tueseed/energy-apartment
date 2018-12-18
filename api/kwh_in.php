@@ -3,7 +3,7 @@
 	if($method == "POST")
 	{
 	require('db/connect-db.php');
-	$kwh = $_POST["meeting_topic"];
+	$kwh = $_POST["kwh"];
 	$sql_insert_kwh = "INSERT INTO tbl_kwh(kwh) VALUES('$kwh')";
 	mysqli_query($conn,$sql_insert_meet);
 	echo "INSERT SUCCESSFULL..";
