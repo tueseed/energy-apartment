@@ -5,7 +5,7 @@
 	require('db/connect-db.php');
 	$kwh = $_POST["kwh"];
 	$sql_insert_kwh = "INSERT INTO tbl_kwh(kwh) VALUES('$kwh')";
-	mysqli_query($conn,$sql_insert_meet);
+	mysqli_query($conn,$sql_insert_kwh);
 	echo "INSERT SUCCESSFULL..";
 	}
 	else
